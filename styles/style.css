@@ -35,9 +35,10 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    /* border: 1px solid red; */
 }
 
-button {
+.button {
     border-radius: 8px;
     background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
     width: 260px;
@@ -54,9 +55,19 @@ button {
     font-family: 'Gilroy', sans-serif;
 }
 
-button:hover {
+.button:hover {
     background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
 }
+
+.common-title {
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+}
+
 
 .header .container {
     display: flex;
@@ -146,4 +157,108 @@ button:hover {
     position: absolute;
     top: -123px;
     left: calc(100% - 991px);
+}
+
+/* Why section */
+
+.why {
+    background: url('../images/whybg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 180px;
+}
+
+.why-items {
+    margin-top: 60px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+}
+
+.why-item {
+    text-align: center;
+}
+
+.why-item-title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 24px 0;
+}
+
+.why-item-text {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* products section */
+
+.products {
+    background: url('../images/burgers_bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1400px;
+    padding-bottom: 180px;
+}
+
+.products-items {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.products-item {
+    padding: 30px;
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+}
+
+.products-item-image {
+    height: 250px;
+}
+
+.products-item-image img {
+    max-width: 100%;
+}
+
+.products-item-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 24px 0;
+}
+
+.products-item-text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.products-item-extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-item-price {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 8px;
+}
+
+.products-item-weight {
+    font-size: 16px;
+    color: #757575;
+}
+
+.button.product-button {
+    display: flex;
+    justify-content: center;
+    width: 182px;
+    height: 62px;
+}
+
+.button.product-button span:first-child {
+    margin-right: 10px;
 }

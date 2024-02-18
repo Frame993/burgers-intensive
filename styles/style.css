@@ -196,7 +196,7 @@ body {
 
 .products {
     background: url('../images/burgers_bg.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: top center;
     background-size: 1400px;
     padding-bottom: 180px;

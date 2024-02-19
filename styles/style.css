@@ -103,6 +103,8 @@ body {
 }
 
 .currency {
+    display: flex;
+    justify-content: center;
     border: 1px solid white;
     padding: 11px;
     border-radius: 5px;
@@ -111,7 +113,7 @@ body {
     text-align: center;
     cursor: pointer;
     margin-left: auto;
-    font-size: 18px;
+    font-size: 16px;
     user-select: none;
 }
 
